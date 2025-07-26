@@ -1,0 +1,19 @@
+<div>{{stringProperty}}</div>
+
+<button (click)="affiche()">Clickez moi</button>
+
+<!--<div *ngIf="numberProperty<21">Il est mineure</div>
+
+<div *ngIf="numberProperty>21">Il est majeure</div> 
+
+<div *ngFor="let element of tableau">{{element}}</div>-->
+
+@if(numberProperty < 21) {
+  <div>Il est mineur</div>
+} @else {
+  <div>Il est majeur</div>
+}
+
+@for(element of tableau; track element) {
+  <div>{{element}}</div>
+}
