@@ -1,0 +1,10 @@
+<input [(ngModel)]="valeurEntree" placeholder="Entrez quelque chose "/>
+<button (click)="afficherValeur()">Afficher la valeur</button>
+
+<from [formGroup]="profileForm">
+    <input id="firstName" type="text" formControlName="firstName" placeholder="Entrez votre nom"/>
+    <input id="lastName" type="text" formControlName="lastName" placeholder="Entrez votre prenom"/>
+    <input id="entreprise" type="text" formControlName="entreprise" placeholder="Entrez votre entreprise"/>
+</from>
+
+<button (click)="afficherNom()">Afficher le nom</button>

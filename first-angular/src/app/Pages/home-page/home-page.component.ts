@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
-  imports: [],
+  imports: [MatButtonModule],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.sass'
 })
@@ -14,6 +15,12 @@ export class HomePageComponent {
     // Logic to navigate to the contact page
     console.log("Navigating to contact page...");
     this.router.navigate(['contact']);
+  }
+
+  goToFormPage():void {
+    // Logic to navigate to the form page
+    console.log("Navigating to form page...");
+    this.router.navigate(['form']);
   }
 
 }
