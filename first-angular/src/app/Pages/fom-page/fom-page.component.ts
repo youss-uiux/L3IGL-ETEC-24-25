@@ -21,6 +21,13 @@ export class FomPageComponent {
     entreprise: new FormControl('', [Validators.minLength(7)]),
   });
 
+  onSubmit(): void {
+    if (this.profileForm.valid) {
+      alert(`Form submitted: ${this.profileForm.value}`);
+    } else {
+      alert('Form is invalid');
+    }
+  }
   afficherValeur(): void {
     alert(`Valeur entrée : ${this.valeurEntree}`);
   }
