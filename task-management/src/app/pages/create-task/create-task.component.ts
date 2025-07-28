@@ -5,6 +5,7 @@ import { Task, TaskService } from '../../services/task.service';
 @Component({
   selector: 'app-create-task',
   imports: [ReactiveFormsModule],
+  standalone: true,
   templateUrl: './create-task.component.html',
   styleUrl: './create-task.component.scss'
 })
